@@ -1,0 +1,28 @@
+{
+  "lista": [
+    {
+      "item": "item1",
+      "id": 1
+    },
+    {
+      "item": "item2",
+      "id": 2
+    },
+    {
+      "item": "item3",
+      "id": 3
+    },
+    {
+      "item": "item4",
+      "id": 4
+    },
+    {
+      "item": "item5",
+      "id": 5
+    },
+    {
+      "item": "Teste",
+      "id": 6
+    }
+  ]
+}
