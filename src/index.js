@@ -13,7 +13,8 @@ const fetchAPI = (url, opt) => {
 }
 
 const valueItem = document.querySelector('.value-item'),
-      addItem = document.querySelector('.add-item');
+      addItem = document.querySelector('.add-item'),
+      allItems = document.querySelector('.all-items');
 
 const eventListener = (elem, event, fn) => elem.addEventListener(event, fn);
 
@@ -21,21 +22,30 @@ const eventListener = (elem, event, fn) => elem.addEventListener(event, fn);
 // List all items..
 const listItem = async () => {
     fetchAPI(api).then( list => {
-        console.log(list);
+        let cItem;
+        allItems.innerHTML = '';
+        for(let item of list ){
+            console.log(item);
+            let lItem = document.createElement('li');
+            lItem.className = 'border-list';
+            lItem.textContent = item.item;
+            cItem = allItems.appendChild(lItem);
+        }
+        return cItem;
     })
 
 }
 
 // Add items list
 const addList = (elemAdd, elemValue) => {
-    return eventListener(elemAdd, 'click', () => {
+    eventListener (elemAdd, 'click', async (e) => {
+        e.preventDefault();
         let vItem = elemValue.value;
         fetchAPI(api, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({item: vItem})
-        })
-
+        }).then(list => listItem())
     })
 }
 
