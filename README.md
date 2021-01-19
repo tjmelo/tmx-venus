@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-# tmx-venus
-=======
-# 🚀 Welcome to your new awesome project!
+# 🚀 TMX Venus!
 
-This project has been created using **webpack scaffold**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
->>>>>>> master
+Project API Shop Listing
