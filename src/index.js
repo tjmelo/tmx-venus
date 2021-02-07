@@ -14,12 +14,11 @@ const fetchAPI = (url, opt) => {
 const elem = {
     valueItem: document.querySelector('.value-item'),
     addItem: document.querySelector('.add-item'),
-    allItems: document.querySelector('.all-items'),
+    allItems: document.querySelector('.all-items')
 }
-const { valueItem, addItem, allItems } = elem;
+const { valueItem, addItem, allItems, deleteItem } = elem;
 
 const eventListener = (elem, event, fn) => elem.addEventListener(event, fn);
-
 
 const MountStructure = {
     checkbox: value => {
@@ -38,12 +37,11 @@ const MountStructure = {
         let boxActions = document.createElement('span');
         boxActions.className = 'box-actions';
         boxActions.appendChild(MountStructure.actionIcon('button', '<i title="Edit" class="fas fa-pen-square"></i>'))
-        boxActions.appendChild(MountStructure.actionIcon('button','<i title="Delete" class="fas fa-trash"></i>'))
+        boxActions.appendChild(MountStructure.actionIcon('button','<i id="'+ el +'" title="Delete" class="fas fa-trash"></i>'))
         
         return boxActions;
     }
 }
-
 
 // List all items..
 const listItem = async () => {
@@ -55,11 +53,12 @@ const listItem = async () => {
             lItem.className = 'border-list';
             lItem.textContent = item.item;
             lItem.appendChild(MountStructure.checkbox(item.item));
-            lItem.appendChild(MountStructure.actions());
+            lItem.appendChild(MountStructure.actions(item.id));
             cItem = allItems.appendChild(lItem);
         }
         return cItem;
     })
+    .then(removeList);
 }
 
 // Add items list
@@ -71,12 +70,29 @@ const addList = (elemAdd, elemValue) => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({item: vItem})
-        }).then(list => listItem())
+        })
+        .then(list => listItem())
     })
 }
 
-eventListener(window, 'load', (e) => {
+// Delete items
+const removeList = el => {
+    let dItem = document.querySelectorAll('.fa-trash');
+    dItem.forEach( el => {
+        el.addEventListener('click', ({target}) => {
+            let { id } = target;
+            let exclude = e => {
+                fetchAPI(`${api}/${id}`,{
+                    method: 'DELETE',
+                }).then(list => listItem())
+            }
+            (window.confirm('Are you sure want to exclude that item?')) && exclude();
+        })
+    })
+}
+
+eventListener(window, 'load', e => {
     e.preventDefault();
     addList(addItem, valueItem);
-    listItem()
+    listItem();
 })
