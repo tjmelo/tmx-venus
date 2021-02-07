@@ -1,8 +1,12 @@
 {
   "lista": [
     {
-      "item": "Other item",
-      "id": 5
+      "item": "Element added --------------",
+      "id": 6
+    },
+    {
+      "item": "Another element added",
+      "id": 7
     }
   ]
 }

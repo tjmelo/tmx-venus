@@ -36,7 +36,8 @@ const MountStructure = {
     actions: el => {
         let boxActions = document.createElement('span');
         boxActions.className = 'box-actions';
-        boxActions.appendChild(MountStructure.actionIcon('button', '<i title="Edit" class="fas fa-pen-square"></i>'))
+        boxActions.appendChild(MountStructure.actionIcon('button', '<i id="'+ el +'" title="Save" class="d-none fas fa-cart-arrow-down"></i>'))
+        boxActions.appendChild(MountStructure.actionIcon('button', '<i id="'+ el +'" title="Edit" class="fas fa-pen-square"></i>'))
         boxActions.appendChild(MountStructure.actionIcon('button','<i id="'+ el +'" title="Delete" class="fas fa-trash"></i>'))
         
         return boxActions;
@@ -51,14 +52,15 @@ const listItem = async () => {
         for(let item of list ){
             let lItem = document.createElement('li');
             lItem.className = 'border-list';
-            lItem.textContent = item.item;
+            lItem.innerHTML = `<span class="item">${item.item}</span>`;
             lItem.appendChild(MountStructure.checkbox(item.item));
             lItem.appendChild(MountStructure.actions(item.id));
             cItem = allItems.appendChild(lItem);
         }
         return cItem;
     })
-    .then(removeList);
+    .then(removeList)
+    .then(editList)
 }
 
 // Add items list
@@ -87,6 +89,35 @@ const removeList = el => {
                 }).then(list => listItem())
             }
             (window.confirm('Are you sure want to exclude that item?')) && exclude();
+        })
+    })
+}
+
+// Edit List
+const editList = () => {
+    let eItem = document.querySelectorAll('.fa-pen-square');
+    let sItem = document.querySelectorAll('.fa-cart-arrow-down');
+    eItem.forEach( (el, idx) => {
+        el.addEventListener('click', ({target}) => {
+            let { id } = target;
+            let reference = el.parentNode.parentNode.parentNode;
+            let iRef = reference.querySelector('.item');
+
+            iRef.setAttribute('contentEditable', true)
+            sItem[idx].classList.remove('d-none');
+            el.classList.add('d-none');
+            reference.classList.add('shadow', 'rounded', 'border');
+            iRef.classList.add('text-warning')
+            iRef.focus();
+
+            sItem[idx].addEventListener('click', e => {
+                // console.log(id)
+                fetchAPI(`${api}/${id}`,{
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({item: iRef.textContent})
+                }).then(list => listItem())
+            })
         })
     })
 }

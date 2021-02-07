@@ -11,10 +11,11 @@
 :root{
     --color-icon: #777777;
     --color-icon-red: #ff0000;
-    --color-icon-blue: #242dac;
+    --color-icon-blue: #35cee2;
+    --color-icon-green: #66e235;
 }
 
-.border-list{
+.border-list{   
     margin: 0;
     padding: .7em;
     list-style: none;
@@ -38,6 +39,7 @@
         color: var(--color-icon);
         -webkit-ransition: all .2s linear;
         transition: all .2s linear;
+        font-size: 18px;
     }
 }
 i[class='fas fa-trash']{
@@ -50,5 +52,11 @@ i[class='fas fa-pen-square']{
     &:hover,
     &:focus{
         color: var(--color-icon-blue);
+    }
+}
+i[class='fas fa-cart-arrow-down']{
+    &:hover,
+    &:focus{
+        color: var(--color-icon-green);
     }
 }
