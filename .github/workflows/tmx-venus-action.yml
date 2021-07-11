@@ -15,4 +15,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      -run: "${{ github.repository }}/deploy.sh"
+      - run: "${{ github.repository }}/deploy.sh"
