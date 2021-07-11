@@ -16,6 +16,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^5.0.1",
+    "gh-pages": "^3.2.3",
     "mini-css-extract-plugin": "^1.3.3",
     "node-sass": "^5.0.0",
     "sass": "^1.32.6",
@@ -30,8 +31,10 @@
     "prestart": "./deploy.sh",
     "start": "npm run server & xdg-open ./build/index.html",
     "build": "webpack",
-    "css": "sass --watch --no-source-map ./src/css/style.scss:./src/css/style.min.css --style compressed"
-  },  
+    "css": "sass --watch --no-source-map ./src/css/style.scss:./src/css/style.min.css --style compressed",
+    "predeploy": "./deploy.sh",
+    "deploy": "./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d build && npm run server"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
