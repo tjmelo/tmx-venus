@@ -1,16 +1,12 @@
 {
   "lista": [
     {
-      "item": "Element added",
-      "id": 6
+      "item": "Element 1",
+      "id": 1
     },
     {
-      "item": "Another element",
-      "id": 7
-    },
-    {
-      "item": "Thiago Melo",
-      "id": 8
+      "item": "Element 2",
+      "id": 2
     }
   ]
 }
