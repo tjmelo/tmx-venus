@@ -27,11 +27,11 @@
   },
   "scripts": {
     "server": "json-server --watch db.json",
-    "start": "xdg-open ./src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "./deploy.sh",
+    "start": "npm run server & xdg-open ./build/index.html",
     "build": "webpack",
     "css": "sass --watch --no-source-map ./src/css/style.scss:./src/css/style.min.css --style compressed"
-  },
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC"
