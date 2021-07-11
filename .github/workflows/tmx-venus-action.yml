@@ -18,3 +18,4 @@ jobs:
       - run: npm i npm@latest
       - run: npm i
       - run: npm i json-server
+      - run: npm run json-server --watch db.json
