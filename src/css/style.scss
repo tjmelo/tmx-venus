@@ -1,5 +1,4 @@
 @use "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@use "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 *{
     margin: 0;
@@ -19,6 +18,7 @@
     margin: 0;
     padding: .7em;
     list-style: none;
+    height: 2.9em;
     &:hover,
     &:focus{
         i{
