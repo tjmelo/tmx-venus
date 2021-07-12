@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "TMX Vênus | Shop List",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "List Shop",
   "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -36,6 +36,6 @@
     "deploy": "./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d build && npm run server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thiago Melo",
   "license": "ISC"
 }

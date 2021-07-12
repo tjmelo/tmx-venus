@@ -1,28 +1,24 @@
 {
   "lista": [
     {
-      "item": "Element 1",
-      "id": 1
-    },
-    {
-      "item": "Element 2",
-      "id": 2
-    },
-    {
       "item": "Add item",
       "id": 3
     },
     {
-      "item": "lll",
+      "item": "outro valor",
       "id": 4
     },
     {
-      "item": "lll",
-      "id": 5
+      "item": "tess",
+      "id": 7
     },
     {
-      "item": "lll",
-      "id": 6
+      "item": "tessdddd",
+      "id": 8
+    },
+    {
+      "item": "qwerq",
+      "id": 10
     }
   ]
 }
