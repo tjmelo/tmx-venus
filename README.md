@@ -2,7 +2,7 @@
 
 ![TMX workflow](https://img.shields.io/github/v/release/tjmelo/tmx-venus.svg)
 
-### Simple CRUD Shop List 
+### :cyclone: Simple CRUD Shop List 
 
 This project is a simple __CRUD__ elements list. 
 
@@ -10,11 +10,11 @@ This project is a simple __CRUD__ elements list.
 - Edit element at list
 - Exclude element at list
 
-### Technologies
+### :cyclone: Technologies
 
 This app use: **HTML**, **JavaScript**, **Babel**, **Sass**
 
-### Commands
+### :cyclone: Commands
 
 Download the project and follow tips:
 
