@@ -2,7 +2,24 @@
 
 ![TMX workflow](https://github.com/tjmelo/tmx-venus/actions/workflows/tmx-venus-action.yml/badge.svg)
 
+### Simple CRUD Shop List 
 
-Project API Shop Listing
+This project is a simple __CRUD__ elements list. 
 
-Look at package.json for instructions
+- Add element at list
+- Edit element at list
+- Exclude element at list
+
+### Technologys
+
+This app use: **HTML**, **JavaScript**, **Babel**, **Sass**
+
+### Commands
+
+Download the project and follow tips:
+
+```npm start``` 
+
+This command initialize an instance of the project and start browser view.
+
+Have a code fun  :fire:
