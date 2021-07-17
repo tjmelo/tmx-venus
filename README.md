@@ -10,7 +10,7 @@ This project is a simple __CRUD__ elements list.
 - Edit element at list
 - Exclude element at list
 
-### Technologys
+### Technologies
 
 This app use: **HTML**, **JavaScript**, **Babel**, **Sass**
 
