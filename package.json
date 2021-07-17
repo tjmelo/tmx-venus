@@ -30,7 +30,7 @@
     "server": "json-server --watch db.json",
     "prestart": "./deploy.sh",
     "start": "npm run server & xdg-open ./build/index.html",
-    "build": "webpack",
+    "build": "webpack & ./deploy.sh",
     "css": "sass --watch --no-source-map ./src/css/style.scss:./src/css/style.min.css --style compressed"
   },
   "keywords": [],
