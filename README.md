@@ -1,6 +1,6 @@
 # 🚀 TMX Venus!
 
-![TMX workflow](https://github.com/tjmelo/tmx-venus/actions/workflows/tmx-venus-action.yml/badge.svg)
+![TMX workflow](https://img.shields.io/github/v/release/tjmelo/tmx-venus.svg)
 
 ### Simple CRUD Shop List 
 
