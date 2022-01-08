@@ -11,7 +11,9 @@ This project is a simple __CRUD__ elements list.
 - Exclude element at list
 
 ![Preview](https://github.com/tjmelo/tmx-venus/blob/main/src/images/shopping-list.png)
+---
 ![Preview](https://github.com/tjmelo/tmx-venus/blob/main/src/images/shopping-list2.png)
+---
 
 ### :cyclone: Technologies
 
