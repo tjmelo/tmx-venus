@@ -35,7 +35,7 @@
   "scripts": {
     "server": "json-server --watch db.json",
     "prestart": "webpack --config ./config/webpack.dev.js",
-    "start": "webpack serve --open --config ./config/webpack.dev.js",
+    "start": "webpack serve --open --config ./config/webpack.dev.js & npm run server",
     "prebuild": "eslint ./src/* --fix",
     "css": "sass --watch --no-source-map ./src/css/style.scss:./dist/style.min.css --style compressed",
     "lint": "eslint --ext .js src/"
