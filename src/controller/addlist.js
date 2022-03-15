@@ -18,7 +18,8 @@ const AddList = (elemAdd, elemValue) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ item: vItem }),
         })
-        .then(() => ListItem());
+        .then(() => ListItem())
+        .catch(e => console.error(e));
     });
 };
 
