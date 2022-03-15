@@ -22,6 +22,4 @@ const MountStructure = {
     },
 };
 
-export {
-    MountStructure
-}
+export { MountStructure }

@@ -6,11 +6,18 @@ import {
 } from "../modules";
 
 import { ListItem } from "./listitem";
+import { eventListener } from '../services'
+
+const DOM = () => {
+    return {
+        DITEM: document.querySelectorAll('.fa-trash')
+    }
+
+}
 
 const RemoveList = () => {
-    const dItem = document.querySelectorAll('.fa-trash');
-    dItem.forEach((el) => {
-        el.addEventListener('click', ({ target }) => {
+    DOM().DITEM.forEach((el) => {
+        eventListener(el, 'click', ({ target }) => {
         const { id } = target;
         const exclude = () => {
             fetchAPI(`${api}/${id}`, {
