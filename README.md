@@ -19,13 +19,13 @@ This project is a simple __CRUD__ elements list.
 
 This app use:
 
-[x] HTML 
-[x] JavaScript
-[ ] Typescript
-[ ] Redux
-[x] Babel
-[x] Sass
-[x] Webpack
+- [x] HTML 
+- [x] JavaScript
+- [ ] Typescript
+- [ ] Redux
+- [x] Babel
+- [x] Sass
+- [x] Webpack
 
 ### :cyclone: Commands
 
