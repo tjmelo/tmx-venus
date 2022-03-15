@@ -24,7 +24,8 @@ const ListItem = async () => {
         return cItem;
     })
     .then(RemoveList)
-    .then(EditList);
+    .then(EditList)
+    .catch(e => console.error(e));
 };
 
 export { ListItem }
