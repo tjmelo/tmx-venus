@@ -6,7 +6,7 @@ import { AddList, EditList, ListItem } from './controller'
 
 eventListener(window, 'load', (e) => {
   e.preventDefault();
-  AddList(ELEM.ADDITEM, ELEM.VALUEITEM);
   ListItem();
+  AddList(ELEM.ADDITEM, ELEM.VALUEITEM);
   EditList();
 });
