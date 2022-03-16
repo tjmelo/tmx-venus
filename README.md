@@ -1,6 +1,7 @@
 # 🚀 TMX Venus!
 
 ![TMX workflow](https://img.shields.io/github/v/release/tjmelo/tmx-venus.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ec8a4c81-bee8-4c94-87f0-f9606385df67/deploy-status)](https://app.netlify.com/sites/tmx-shoplist/deploys)
 
 ### :cyclone: Simple CRUD Shop List 
 
