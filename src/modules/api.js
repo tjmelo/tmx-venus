@@ -1,4 +1,4 @@
-const api = 'http://localhost:3000/lista';
+const api = 'https://tmx-shoplist.netlify.app/.netlify/functions/api/lista';
 
 // Model fetch API..
 const fetchAPI = (url, opt) => new Promise((resolve) => {

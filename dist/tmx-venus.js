@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"api\": () => (/* binding */ api),\n/* harmony export */   \"fetchAPI\": () => (/* binding */ fetchAPI)\n/* harmony export */ });\nconst api = 'http://localhost:3000/lista';\n\n// Model fetch API..\nconst fetchAPI = (url, opt) => new Promise((resolve) => {\n  fetch(url, opt)\n    .then(data => data.ok ? data.json() : console.warn(data))\n    .then((res) => resolve(res))\n    .catch(e => console.error(e));\n});\n\n\n\n\n//# sourceURL=webpack://tmx-venus-shop-list/./src/modules/api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"api\": () => (/* binding */ api),\n/* harmony export */   \"fetchAPI\": () => (/* binding */ fetchAPI)\n/* harmony export */ });\nconst api = 'https://tmx-shoplist.netlify.app/.netlify/functions/api/lista';\n\n// Model fetch API..\nconst fetchAPI = (url, opt) => new Promise((resolve) => {\n  fetch(url, opt)\n    .then(data => data.ok ? data.json() : console.warn(data))\n    .then((res) => resolve(res))\n    .catch(e => console.error(e));\n});\n\n\n\n\n//# sourceURL=webpack://tmx-venus-shop-list/./src/modules/api.js?");
 
 /***/ }),
 
