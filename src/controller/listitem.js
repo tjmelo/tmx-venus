@@ -10,10 +10,10 @@ import {
 } from "../modules";
 
 const ListItem = async () => {
-    fetchAPI(api).then((list) => {
+    fetchAPI(api).then(({lista}) => {
         let cItem;
         ELEM.ALLITEMS.innerHTML = '';
-        list.forEach((item) => {
+        lista.forEach((item) => {
         const lItem = document.createElement('li');
         lItem.className = 'border-list';
         lItem.innerHTML = `<span class="item">${item.item}</span>`;
