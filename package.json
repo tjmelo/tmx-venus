@@ -31,7 +31,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
-    "server": "json-server --watch ./config/db.json",
+    "server": "json-server --watch ./dist/backend/functions/db.json",
     "prestart": "webpack --config ./config/webpack.dev.js",
     "start": "webpack serve --open --config ./config/webpack.dev.js & npm run server",
     "prebuild": "eslint ./src/* --fix",

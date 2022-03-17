@@ -1,4 +1,4 @@
-import data from '../../config/db.json';
+const data = require('./db.json')
 
 exports.handler = async function(event, context){
     return {
