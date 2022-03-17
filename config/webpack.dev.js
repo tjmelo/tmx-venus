@@ -1,24 +1,14 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-const tmxVenus = {
+module.exports = merge(common, {
   mode: 'development',
-  entry: './src/index.js',
-  output: {
-    filename: 'tmx-venus.js',
-    path: path.resolve(__dirname, '../dist')
-  },
-
+  devtool: 'inline-source-map',
   devServer: { 
     port: 9000 ,
     static: {
       directory: path.join(__dirname, '../dist'),
     },
-  },
-  plugins: [new HtmlWebpackPlugin({
-    template: './public/index.html'
-  })],
-
-}
-
-module.exports = tmxVenus;
+  }
+});
