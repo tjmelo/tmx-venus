@@ -1,4 +1,4 @@
-const api = 'https://tmx-shoplist.netlify.app/.netlify/functions/api/lista';
+const api = 'https://tmx-shoplist.netlify.app/.netlify/functions/api/';
 
 // Model fetch API..
 const fetchAPI = (url, opt) => new Promise((resolve) => {
