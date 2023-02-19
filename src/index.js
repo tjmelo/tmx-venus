@@ -1,12 +1,4 @@
-import { ELEM } from "./modules";
+import App from './classes/app';
 
-import { eventListener } from "./services";
-
-import { AddList, EditList, ListItem } from './controller'
-
-eventListener(window, 'load', (e) => {
-  e.preventDefault();
-  ListItem();
-  AddList(ELEM.ADDITEM, ELEM.VALUEITEM);
-  EditList();
-});
+const startApp = new App();
+startApp();
