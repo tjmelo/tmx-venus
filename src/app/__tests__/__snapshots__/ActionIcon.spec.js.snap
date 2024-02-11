@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should verify if the toActionIcon function has been called Should to call the function 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      "button",
+      "<i id="icon-test" title="Test" class="d-none fas fa-cart-arrow-test"></i>",
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": <button>
+        <i
+          class="d-none fas fa-cart-arrow-test"
+          id="icon-test"
+          title="Test"
+        />
+      </button>,
+    },
+  ],
+}
+`;

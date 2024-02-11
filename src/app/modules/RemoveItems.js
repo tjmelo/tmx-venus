@@ -14,7 +14,8 @@ const toRemoveItems = () => {
           method: 'DELETE',
         }).then(() => referenceElementToRemove.remove());
       };
-      if (window.confirm('Are you sure want to exclude that item?')) { //eslint-disable-line
+      if (window.confirm('Are you sure want to exclude that item?')) {
+        //eslint-disable-line
         exclude();
       }
     });

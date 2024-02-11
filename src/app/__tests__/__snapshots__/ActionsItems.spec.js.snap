@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should verify if the toActions function receives a determinated params Should mount structure action for item 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      10,
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": <span
+        class="box-actions"
+      >
+        <button>
+          <i
+            class="d-none fas fa-cart-arrow-down"
+            id="10"
+            title="Save"
+          />
+        </button>
+        <button>
+          <i
+            class="fas fa-pen-square"
+            id="10"
+            title="Edit"
+          />
+        </button>
+        <button>
+          <i
+            class="fas fa-trash"
+            id="10"
+            title="Delete"
+          />
+        </button>
+      </span>,
+    },
+  ],
+}
+`;

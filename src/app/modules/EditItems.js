@@ -1,10 +1,8 @@
 import toFetchAPI from './fetchAPI';
 import { KEYS } from '../constants';
 
-const toEditingItems = (itemNodeReferences, statusEdit) => {
-  const {
-    parentNodeReference, itemNodeReference, toEditedItemI, el,
-  } = itemNodeReferences;
+export const toEditingItems = (itemNodeReferences, statusEdit) => {
+  const { parentNodeReference, itemNodeReference, toEditedItemI, el } = itemNodeReferences;
 
   if (statusEdit) {
     toEditedItemI.classList.remove('d-none');
@@ -43,7 +41,9 @@ const toEditItems = async () => {
         await toFetchAPI(`${KEYS.API}/${id}`, {
           method: 'PUT',
           headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ description: itemNodeReference.textContent }),
+          body: JSON.stringify({
+            description: itemNodeReference.textContent,
+          }),
         }).then(() => toEditingItems(params, false));
       });
     });

@@ -4,7 +4,7 @@ import toFetchAPI from './fetchAPI';
 import { KEYS } from '../constants';
 
 const toAddList = (elemAdd) => {
-  elemAdd.addEventListener('click', async (e) => {
+  return elemAdd.addEventListener('click', (e) => {
     const elementValue = document.querySelector('.value-item');
     e.preventDefault();
 

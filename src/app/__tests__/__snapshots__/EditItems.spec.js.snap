@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should edit the value of an item Should edit an item 1`] = `
+[MockFunction] {
+  "calls": [
+    [],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Should edit the value of an item Should edit as a status 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      {
+        "el": "el",
+        "itemNodeReference": "itemNodeReference",
+        "parentNodeReference": "parentNodeReference",
+        "toEditedItemI": "toEditedItemI",
+      },
+      true,
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

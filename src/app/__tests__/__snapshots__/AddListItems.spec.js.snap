@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render function to Add new item in list Should render call function with reference button 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      <button
+        id="button"
+      />,
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "settings": {
     "import/resolver": {
@@ -10,13 +11,9 @@
       }
     }
   },
-  "extends": [
-    "airbnb-base"
-  ],
+  "extends": ["airbnb-base"],
   "parserOptions": {
     "ecmaVersion": 13,
     "sourceType": "module"
-  },
-  "rules": {
   }
 }
