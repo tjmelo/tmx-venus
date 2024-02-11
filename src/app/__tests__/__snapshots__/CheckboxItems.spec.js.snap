@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should get a param and render a checkbox Should render a checkbox 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      "test description",
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": <input
+        class="check"
+        type="checkbox"
+        value="test description"
+      />,
+    },
+  ],
+}
+`;

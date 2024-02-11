@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should to remove a determinate items from app Should delete an item 1`] = `
+[MockFunction] {
+  "calls": [
+    [],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Should to remove a determinate items from app Should request toFetchAPI for get determinate item 1`] = `
+[MockFunction] {
+  "calls": [
+    [
+      "https://63f239144f17278c9a22d1cd.mockapi.io/api/v1/item",
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

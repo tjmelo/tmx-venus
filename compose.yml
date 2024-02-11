@@ -1,0 +1,10 @@
+services:
+  tmx-venus:
+    container_name: ${PROJECT_NAME:-tmx-venus}-c
+    build: .
+    image: tmwd/${PROJECT_NAME:-tmx-venus}:${PROJECT_VERSION:-latest}
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/${PROJECT_NAME:-tmx-venus}
+      
