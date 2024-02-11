@@ -1,64 +1,67 @@
-@use "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@use '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: none !important;
-    background: none;
-    border: none;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  background: none;
+  border: none;
 }
-:root{
-    --color-icon: #777777;
-    --color-icon-red: #ff0000;
-    --color-icon-blue: #35cee2;
-    --color-icon-green: #66e235;
+:root {
+  --color-icon: #777777;
+  --color-icon-red: #ff0000;
+  --color-icon-blue: #35cee2;
+  --color-icon-green: #66e235;
 }
 
-.border-list{   
-    margin: 0;
-    padding: .7em;
-    list-style: none;
-    height: 2.9em;
-    overflow: hidden;
-    &:hover,
-    &:focus{
-        i{
-            opacity: 1;
-        }
+.border-list {
+  margin: 0;
+  padding: 0.7em;
+  list-style: none;
+  height: 2.9em;
+  overflow: hidden;
+  &:hover,
+  &:focus {
+    i {
+      opacity: 1;
     }
+  }
 }
-.check{
-    float: left;
-    margin: .3em 1em .3em 0;
+.check {
+  float: left;
+  margin: 0.3em 1em 0.3em 0;
 }
-.box-actions{
-    display: block;
-    float: right;
-    i{
-        opacity: .2;
-        margin-left: .7em;
-        color: var(--color-icon);
-        -webkit-ransition: all .2s linear;
-        transition: all .2s linear;
-        font-size: 18px;
-    }
+.box-actions {
+  display: block;
+  float: right;
+  i {
+    opacity: 0.2;
+    margin-left: 0.7em;
+    color: var(--color-icon);
+    -webkit-ransition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-size: 18px;
+  }
 }
-i[class='fas fa-trash']{
-    &:hover,
-    &:focus{
-        color: var(--color-icon-red);
-    }
+i[class='fas fa-trash'] {
+  &:hover,
+  &:focus {
+    color: var(--color-icon-red);
+  }
 }
-i[class='fas fa-pen-square']{
-    &:hover,
-    &:focus{
-        color: var(--color-icon-blue);
-    }
+i[class='fas fa-pen-square'] {
+  &:hover,
+  &:focus {
+    color: var(--color-icon-blue);
+  }
 }
-i[class='fas fa-cart-arrow-down']{
-    &:hover,
-    &:focus{
-        color: var(--color-icon-green);
-    }
+i[class='fas fa-cart-arrow-down'] {
+  &:hover,
+  &:focus {
+    color: var(--color-icon-green);
+  }
 }
-ul, li{ padding-left: 0 }
+ul,
+li {
+  padding-left: 0;
+}
