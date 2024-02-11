@@ -92,6 +92,13 @@ To compile CSS in the development process:
 npm run css
 ```
 
+## Build
+
+To generate build:
+```sh
+npm run build
+```
+
 Open the app on a browser http://localhost:9000
 
 
