@@ -47,7 +47,7 @@ This app uses:
 - [x] Docker
 
 ## Simple Develop Process
-![Checkout CI](https://github.com/tjmelo/tmx-venus/actions/workflows/checkout-ci/badge.svg)
+[![Tasks TMX Venus runner](https://github.com/tjmelo/tmx-venus/actions/workflows/checkout-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/checkout-ci.yml)
 
 Download the project
 
@@ -64,7 +64,7 @@ npm install && npm start
 ```
 
 ## Docker Develop Process
-![Docker Image CI](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci/badge.svg)
+[![Docker Image CI](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml)
 
 ```sh
 git clone https://github.com/tjmelo/tmx-venus.git
