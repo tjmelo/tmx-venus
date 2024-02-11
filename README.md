@@ -14,6 +14,8 @@
     -   [Simple Develop Process](#simple-develop-process)
     -   [Docker Develop Process](#docker-develop-process)
 
+-   [CSS](#css)
+
 # About app
 
 ### Simple CRUD Shop List
@@ -81,6 +83,13 @@ or image in **Docker Hub** for optional download
 
 ```
 docker pull tmwd/tmx-venus
+```
+
+## CSS
+
+To compile CSS in the development process:
+```sh
+npm run css
 ```
 
 Open the app on a browser http://localhost:9000
