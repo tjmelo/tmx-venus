@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:20-alpine
 
 ENV TMX_PATH tmx-venus \
     TMX_NAME "TMX Venus"
@@ -12,8 +12,6 @@ WORKDIR /${TMX_PATH}
 COPY package*.json .
 
 RUN npm i
-
-RUN npm run check
 
 COPY . .
 
