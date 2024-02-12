@@ -1,4 +1,4 @@
-name: Tasks TMX Vênus runner
+name: checkout-system-ci
 on: [push]
 jobs:
   TMX-Mercury:

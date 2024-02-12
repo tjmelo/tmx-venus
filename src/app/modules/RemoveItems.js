@@ -12,7 +12,10 @@ const toRemoveItems = () => {
       const exclude = () => {
         toFetchAPI(`${KEYS.API}/${id}`, {
           method: 'DELETE',
-        }).then(() => referenceElementToRemove.remove());
+        }).then(() => {
+          referenceElementToRemove.remove();
+          'vibrate' in navigator && navigator.vibrate(100);
+        });
       };
       if (window.confirm('Are you sure want to exclude that item?')) {
         //eslint-disable-line

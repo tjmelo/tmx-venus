@@ -18,6 +18,7 @@ const toAddList = (elemAdd) => {
       .then(() => {
         toListItems();
         elementValue.value = '';
+        'vibrate' in navigator && navigator.vibrate(100);
       })
       .catch((error) => console.error(error)); //eslint-disable-line
   });

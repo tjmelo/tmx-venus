@@ -8,14 +8,15 @@
 
 ## Table of content
 
--   [About app](#about-app)
--   [Preview Screens](#preview-screens)
--   [Project details](#project-details)
-    -   [Simple Develop Process](#simple-develop-process)
-    -   [Docker Develop Process](#docker-develop-process)
+- [About app](#about-app)
+- [Preview Screens](#preview-screens)
+- [Project details](#project-details)
 
--   [CSS](#css)
--   [Build](#build)
+  - [Simple Develop Process](#simple-develop-process)
+  - [Docker Develop Process](#docker-develop-process)
+
+- [CSS](#css)
+- [Build](#build)
 
 # About app
 
@@ -47,6 +48,7 @@ This app uses:
 - [x] Docker
 
 ## Simple Develop Process
+
 [![Tasks TMX Venus runner](https://github.com/tjmelo/tmx-venus/actions/workflows/checkout-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/checkout-ci.yml)
 
 Download the project
@@ -64,6 +66,7 @@ npm install && npm start
 ```
 
 ## Docker Develop Process
+
 [![Docker Image CI](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml)
 
 ```sh
@@ -89,6 +92,7 @@ docker pull tmwd/tmx-venus
 ## CSS
 
 To compile CSS in the development process:
+
 ```sh
 npm run css
 ```
@@ -96,11 +100,11 @@ npm run css
 ## Build
 
 To generate build:
+
 ```sh
 npm run build
 ```
 
 Open the app on a browser http://localhost:9000
-
 
 Have a code fun :fire:
