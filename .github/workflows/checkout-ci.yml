@@ -1,4 +1,4 @@
-name: Tasks TMX Vênus runner
+name: tmx-venus-ci
 on: [push]
 jobs:
   TMX-Mercury:
