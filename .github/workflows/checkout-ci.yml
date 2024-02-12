@@ -1,4 +1,4 @@
-name: tmx-venus-ci
+name: checkout-system-ci
 on: [push]
 jobs:
   TMX-Mercury:
