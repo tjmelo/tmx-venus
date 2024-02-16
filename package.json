@@ -1,8 +1,8 @@
 {
-  "name": "tmx-venus-shop-list",
-  "version": "3.2.0",
+  "name": "@tjmelo/tmx-venus",
+  "version": "3.2.1",
   "description": "List Shop",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "homepage": "https://tmx-shoplist.netlify.app",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "node": "v20"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-free": "^6.1.1",  
     "bootstrap": "^5.2.0",
     "html-webpack-plugin": "^5.5.0",
     "typescript": "^5.3.3",
@@ -55,5 +55,10 @@
     "check": "npm test & npm run lint & npm run prettier",
     "test": "jest"
   },
-  "keywords": []
+  "keywords": [
+    "shoplist",
+    "shop",
+    "list",
+    "crud"
+  ]
 }
