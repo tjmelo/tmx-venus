@@ -107,7 +107,7 @@ docker pull tmwd/tmx-venus
 Open the app on a browser http://localhost:9000
 
 ## NPM Package
-[![NPM Github Package](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/ghpckg-npm-ci.yml)
+[![publish-to-github-packages](https://github.com/tjmelo/tmx-venus/actions/workflows/ghpckg-npm-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/ghpckg-npm-ci.yml)
 [![NPM Registry](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/npm-registry.yml)
 
 For installation by npm package :
