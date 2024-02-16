@@ -1,6 +1,6 @@
 {
   "name": "@tjmelo/tmx-venus",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "List Shop",
   "main": "./dist/index.js",
   "homepage": "https://tmx-shoplist.netlify.app",
