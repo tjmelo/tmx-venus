@@ -82,7 +82,7 @@ npm install && npm start
 
 ## Docker Develop Process
 
-[![Docker Image CI](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml)
+[![Docker Image CI](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/ghpckg-image-ci.yml)
 
 ```sh
 git clone https://github.com/tjmelo/tmx-venus.git
@@ -107,6 +107,9 @@ docker pull tmwd/tmx-venus
 Open the app on a browser http://localhost:9000
 
 ## NPM Package
+[![NPM Github Package](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/ghpckg-npm-ci.yml)
+[![NPM Registry](https://github.com/tjmelo/tmx-venus/actions/workflows/image-ci.yml/badge.svg)](https://github.com/tjmelo/tmx-venus/actions/workflows/npm-registry.yml)
+
 For installation by npm package :
 > Aggregated micro frontend
 
