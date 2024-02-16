@@ -11,12 +11,11 @@
 - [About app](#about-app)
 - [Preview Screens](#preview-screens)
 - [Project details](#project-details)
-
+  - [CSS](#css)
+  - [Build](#build)
   - [Simple Develop Process](#simple-develop-process)
   - [Docker Develop Process](#docker-develop-process)
-
-- [CSS](#css)
-- [Build](#build)
+  - [NPM Package](#npm-package)
 
 # About app
 
@@ -46,6 +45,22 @@ This app uses:
 - [x] Sass
 - [x] Webpack
 - [x] Docker
+
+## CSS
+
+To compile CSS in the development process:
+
+```sh
+npm run css
+```
+
+## Build
+
+To generate build:
+
+```sh
+npm run build
+```
 
 ## Simple Develop Process
 
@@ -89,22 +104,15 @@ or image in **Docker Hub** for optional download
 docker pull tmwd/tmx-venus
 ```
 
-## CSS
-
-To compile CSS in the development process:
-
-```sh
-npm run css
-```
-
-## Build
-
-To generate build:
-
-```sh
-npm run build
-```
-
 Open the app on a browser http://localhost:9000
+
+## NPM Package
+For installation by npm package :
+> Aggregated micro frontend
+
+```bash
+npm install @tjmelo/tmx-venus@latest
+```
+
 
 Have a code fun :fire:
