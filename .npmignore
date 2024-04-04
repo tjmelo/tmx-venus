@@ -1,4 +1,17 @@
 node_modules/
 src/
+config/
+public/
+
+Dockerfile
+compose.yml
+jest.config.json
+
+.env
 .vscode/
 .github/
+.prettier
+.babelrc
+.dockerignore
+.eslint
+.todo
