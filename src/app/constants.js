@@ -5,4 +5,5 @@ export const KEYS = {
 export const ELEM = {
   ADD_ITEM: document.querySelector('.add-item'),
   ALL_ITEMS: document.querySelector('.all-items'),
+  BAT_ACTIONS_ITEMS: document.querySelector('.bat-actions-items'),
 };

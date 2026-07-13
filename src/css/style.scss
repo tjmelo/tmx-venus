@@ -44,6 +44,18 @@
     font-size: 18px;
   }
 }
+
+.bat-actions-items {
+  display: block;
+  margin: 1em 0;
+  i {
+    opacity: 1;
+    color: var(--color-icon-red);
+    -webkit-ransition: all 0.2s linear;
+    transition: all 0.2s linear;
+    font-size: 18px;
+  }
+}
 i[class='fas fa-trash'] {
   &:hover,
   &:focus {
