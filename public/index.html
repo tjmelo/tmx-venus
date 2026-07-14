@@ -15,17 +15,19 @@
 
     <body>
       <div class="container">
-        <h1 class="my-4">Shopping List</h1>
+        <h1 class="my-4 text-primary">
+          <i class="far fa-cart-shopping"></i> &nbsp; Shopping List
+        </h1>
         <div class="row">
           <div class="col-12 col-sm-9">
-            <input class="value-item form-control" type="text" placeholder="Describe item" />
+            <input class="value-item form-control" type="text" placeholder="Describe item to add ..." />
           </div>
 
           <div class="col-12 col-sm-3">
-            <button class="col-12 add-item btn btn-primary">Add Item</button>
+            <button class="col-12 add-item btn btn-primary gap-2 d-flex align-items-center justify-content-center"><i class="fas fa-plus"></i>&nbsp;Add Item</button>
           </div>
         </div>
-
+        <div class="bat-actions-items"></div>
         <ul class="col-xs-12 mt-3 all-items list-group"></ul>
       </div>
     </body>

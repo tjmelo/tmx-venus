@@ -8,8 +8,15 @@ module.exports = merge(common, {
   devServer: {
     open: true,
     port: 9000,
+    hot: true,
     static: {
       directory: path.join(__dirname, '../dist'),
+    },
+    watchFiles: {
+      paths: ['src/**/*', 'public/**/*'],
+      options: {
+        usePolling: false,
+      },
     },
   },
 });
