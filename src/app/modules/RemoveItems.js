@@ -25,4 +25,23 @@ const toRemoveItems = () => {
   });
 };
 
-export default toRemoveItems;
+const toRemoveBat = () => {
+  const batAction = document.querySelector('.bat-actions-items');
+  const inputChecked = document.querySelectorAll('.check');
+
+  batAction.addEventListener('click', () => {
+    inputChecked.forEach((el) => {
+      const referenceElementToRemove = el.parentNode;
+      if (el.checked) {
+        toFetchAPI(`${KEYS.API}/${el.id}`, {
+          method: 'DELETE',
+        }).then(() => {
+          referenceElementToRemove.remove();
+          'vibrate' in navigator && navigator.vibrate(100);
+        });
+      }
+    });
+  });
+};
+
+export { toRemoveItems, toRemoveBat };

@@ -19,4 +19,11 @@ const toActions = (element) => {
   return boxActions;
 };
 
-export default toActions;
+const toActionBat = () => {
+  const boxActions = document.createElement('span');
+  boxActions.className = 'bat-actions-items';
+  boxActions.appendChild(toActionIcon('button', `<i title="Delete" class="fas fa-square-minus"></i>`));
+  return boxActions;
+};
+
+export { toActions, toActionBat };
